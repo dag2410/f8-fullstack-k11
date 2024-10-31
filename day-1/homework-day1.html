@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework - Day1</title>
+    <title>Giới Thiệu Bản Thân - Duong Hai Dang</title>
   </head>
   <body>
     <h1>Introduce myself</h1>
@@ -11,18 +11,19 @@
       <img
         src="/day-1/imgs/ava2.jpg"
         alt="Duong Hai Dang"
-        width="200px"
-        height="auto"
+        width="200"
+        height="200"
       />
       <h2>Main introduction:</h2>
       <ul>
         <li>Full Name: Duong Hai Dang</li>
         <li>Age: 20</li>
         <li>Hometown: Hanoi</li>
-        <a href="https://www.facebook.com/haidang2410"><li>Facebook</li></a>
-        <a href="https://github.com/dag2410"><li>GitHub</li></a>
+        <li><a href="https://www.facebook.com/haidang2410">Facebook</a></li>
+        <li><a href="https://github.com/dag2410">GitHub</a></li>
       </ul>
     </section>
+
     <hr />
 
     <section>
@@ -33,16 +34,20 @@
         <li>CSS</li>
       </ul>
     </section>
+
     <hr />
 
-    <h2>My Project</h2>
-    <ul>
-      <li>WordPress Newpaper</li>
-      <li>Catch the ball</li>
-    </ul>
     <section>
-      <hr />
+      <h2>My Project</h2>
+      <ul>
+        <li>WordPress Newpaper</li>
+        <li>Catch the ball</li>
+      </ul>
+    </section>
 
+    <hr />
+
+    <section>
       <h2>Education</h2>
       <table border="1">
         <thead>
@@ -67,6 +72,7 @@
         </tbody>
       </table>
     </section>
+
     <hr />
 
     <section>
@@ -77,27 +83,43 @@
         <li>Music</li>
       </ul>
     </section>
+
     <hr />
 
     <section>
       <h2>Contact</h2>
-      <table>
-        <tr>
-          <td><input type="text" placeholder="FullName" /></td>
-        </tr>
+      <form action="send">
+        <table>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="FullName"
+                required
+              />
+            </td>
+          </tr>
 
-        <tr>
-          <td><input type="email" placeholder="Email" /></td>
-        </tr>
-        <tr>
-          <td>
-            <textarea name="comment" id="" placeholder="Comment..."></textarea>
-          </td>
-        </tr>
-        <tr>
-          <td><button>Send</button></td>
-        </tr>
-      </table>
+          <tr>
+            <td>
+              <input type="email" name="email" placeholder="Email" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                name="comment"
+                id="1"
+                placeholder="Comment..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><button>Send</button></td>
+          </tr>
+        </table>
+      </form>
     </section>
   </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="GET"
+    >
+      <div>
+        <input
+          type="text"
+          name="username"
+          placeholder="Nhập họ và tên của bạn"
+          required
+          minlength="6"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="username"
+          placeholder="Nhập họ và tên của bạn"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Nhập email của bạn"
+          required
+        />
+      </div>
+      <div>
+        <input type="password" name="password" placeholder="Nhập password" />
+      </div>
+      <div>
+        <input
+          type="password"
+          name="password"
+          placeholder="Xác nhận password"
+        />
+      </div>
+      <div>
+        <label for="html">Giới tính:</label>
+        <label for="gender">Nam</label>
+        <input type="radio" name="gender" />
+        <label for="html">Nữ</label>
+        <input type="radio" name="gender" />
+        <label for="html">Khác</label>
+        <input type="radio" name="gender" />
+      </div>
+      <div>
+        <label for="job">Nghề nghiệp:</label>
+        <label for="job">Đi làm</label>
+        <input type="checkbox" name="job" />
+        <label for="job">Sinh viên</label>
+        <input type="checkbox" name="job" />
+        <label for="job">Khác</label>
+        <input type="checkbox" name="job" />
+      </div>
+      <div><textarea name="comment" id="comment">Câu hỏi khác</textarea></div>
+      <div>
+        <button type="submit">Đăng kí</button>
+      </div>
+      <!-- gender -->
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Felmale</option>
+        <option value="other">Other</option>
+      </select>
+    </form>
+  </body>
+</html>
